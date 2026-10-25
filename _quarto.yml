@@ -1,0 +1,52 @@
+project:
+  type: website
+  output-dir: docs  # pour Github pages
+  execute-dir: project
+  
+
+jupyter: tp-ml-ia-fiable
+  
+website:
+  title: "TP Machine Learning IA fiable"
+  navbar:
+    background: "#1D4ED8"
+    left:
+      - href: index.qmd
+        text: Accueil
+      - href: chapters/tp1.qmd
+        text: "TP1"
+      - href: chapters/tp2.qmd
+        text: "TP2"
+      - href: chapters/tp3.qmd
+        text: "TP3"
+      - href: chapters/tp4.qmd
+        text: "TP4"
+      - href: chapters/tp5.qmd
+        text: "TP5"
+      - href: chapters/tp6.qmd
+        text: "TP6"
+      - href: chapters/tp7.qmd
+        text: "TP7"
+        
+    right:
+      - icon: github
+        href: https://github.com/ndhviet
+      - text: "Portfolio de Viet"
+        href: https://ndhviet.github.io/
+        aria-label: "Portfolio"
+      - icon: linkedin           
+        href: https://www.linkedin.com/in/hoang-viet1810/?isSelfProfile=false
+        aria-label: "LinkedIn"
+      
+
+format:
+  html:
+    theme: flatly
+    css: assets/custom.css
+    include-after-body: [assets/loading.html, assets/footer.html]
+    toc: true
+    toc-location: right
+    toc-title: "Sur cette page" 
+    code-fold: true
+    embed-resources: false
+    #include-after-body: footer.html

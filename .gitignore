@@ -19,3 +19,5 @@ __pycache__/
 
 # Data
 data/
+/.quarto/
+**/*.quarto_ipynb

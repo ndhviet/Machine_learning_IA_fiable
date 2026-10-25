@@ -1,0 +1,52 @@
+---
+title: "Cadre et théorie de la décision"
+author: "NGUYEN Duc Hoang Viet "
+number-sections: true 
+code-fold: false
+execute:
+  warning: false
+  message: false
+---
+
+```{python}
+import sys; sys.path.append("..")
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib_inline
+from sklearn.model_selection import train_test_split
+```
+
+
+# Objectifs
+
+Phrase décrivant l'objectif du TP, par exemple : mettre en œuvre le cadre de la théorie de la décision avant d'utiliser `scikit-learn`.
+
+::: {.callout-note}
+## Déroulé
+
+| | |
+|---|---|
+| **Ex. 1** | Titre de l'exercice 1 |
+| **Ex. 2** | Titre de l'exercice 2 |
+| **Ex. 3** | Titre de l'exercice 3 |
+| **Ex. 4** | Titre de l'exercice 4 |
+:::
+
+# Exercice 1 — Titre de l'exercice
+
+## Charger et décrire
+
+::: {.callout-note}
+## Consigne
+
+Énoncé de la question...
+:::
+
+```{python}
+import utils 
+utils.style()
+df = utils.load_saheart()
+df.head()
+```
