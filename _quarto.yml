@@ -8,8 +8,14 @@ jupyter: tp-ml-ia-fiable
   
 website:
   title: "TP Machine Learning IA fiable"
+  #favicon: assets/favicon.svg
+  page-navigation: true         
+  back-to-top-navigation: true
   navbar:
     background: "#1D4ED8"
+    #logo: assets/favicon.svg
+    #logo-alt: "Logo V"
+    
     left:
       - href: index.qmd
         text: Accueil
@@ -46,7 +52,15 @@ format:
     include-after-body: [assets/loading.html, assets/footer.html]
     toc: true
     toc-location: right
-    toc-title: "Sur cette page" 
+    toc-title: "Sur cette page"
+    smooth-scroll: true
     code-fold: true
+    code-copy: true
+    code-overflow: wrap
+    #code-block-bg: true
+    #code-block-border-left: "#2563EB"
+    fontsize: 1.05em
+    grid:
+      body-width: 900px
+      sidebar-width: 250px
     embed-resources: false
-    #include-after-body: footer.html

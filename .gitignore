@@ -21,3 +21,9 @@ __pycache__/
 data/
 /.quarto/
 **/*.quarto_ipynb
+
+# RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Renviron

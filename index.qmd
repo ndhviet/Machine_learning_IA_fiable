@@ -3,6 +3,11 @@ title: "TP Machine Learning IA fiable"
 author: "NGUYEN Duc Hoang Viet"
 ---
 
+# Présentation du cours
+
+Ce cours est enseigné par [Christophe Ambroise](https://ambroise.cloud/), professeur de statistique à l'Université d'Évry Paris-Saclay. Ce site rassemble mes travaux pratiques réalisés dans ce cadre.
+
+
 # Liste des TP
 
 -   [TP1 : Théorie de la décision](chapters/tp1.qmd)

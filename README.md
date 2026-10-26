@@ -38,15 +38,14 @@ Après avoir activé le virtual environment :
 pip install -r requirements.txt
 ```
 
+### Thiết lập lần đầu trên mỗi máy
 
-### 7. Vérifier NumPy
-
-```bash
-python -c "import numpy as np; print(np.__version__)"
-```
-
-### 8. Vérifier Matplotlib
+**Trên mỗi máy, sau `git pull` (chỉ thực hiện lần đầu):**
 
 ```bash
-python -c "import matplotlib; print(matplotlib.__version__)"
+cd ~/Documents/github/Machine_learning_IA_fiable
+bash setup.sh
 ```
+Sau đó, thoát hẳn RStudio bằng `Cmd + Q`, mở lại RStudio, rồi bấm **Render** là chạy.
+
+**Các lần sau:** chỉ cần `git pull` rồi **Render**, không phải làm gì thêm.

@@ -1,0 +1,164 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Cadre et théorie de la décision\"\n",
+        "author: \"NGUYEN Duc Hoang Viet \"\n",
+        "number-sections: true \n",
+        "code-fold: false\n",
+        "execute:\n",
+        "  warning: false\n",
+        "  message: false\n",
+        "---"
+      ],
+      "id": "db0fa179"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import sys; sys.path.append(\"..\")\n",
+        "\n",
+        "import numpy as np\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "import matplotlib_inline\n",
+        "from sklearn.model_selection import train_test_split"
+      ],
+      "id": "782efaf5",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "**Objectifs**\n",
+        "\n",
+        "Phrase décrivant l'objectif du TP, par exemple : mettre en œuvre le cadre de la théorie de la décision avant d'utiliser `scikit-learn`.\n",
+        "\n",
+        "::: {.callout-note}\n",
+        "## Déroulé\n",
+        "\n",
+        "| | |\n",
+        "|---|---|\n",
+        "| **Ex. 1** | Prise en main et découpage|\n",
+        "| **Ex. 2** | Bayes naïf codé à la main |\n",
+        "| **Ex. 3** | LDA, QDA et frontières de décision |\n",
+        "| **Ex. 4** | Évaluation et coûts asymétriques |\n",
+        ":::\n",
+        "\n",
+        "# Exercice 1 — Titre de l'exercice\n",
+        "\n",
+        "## Charger et décrire"
+      ],
+      "id": "667a48eb"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import utils \n",
+        "utils.style()\n",
+        "df = utils.load_saheart()\n",
+        "df.head()"
+      ],
+      "id": "234454cd",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "df.columns            # tên các cột (dạng Index)\n",
+        "df.columns.tolist()   # tên các cột (dạng list, dễ đọc hơn)\n",
+        "df.dtypes             # kiểu dữ liệu của từng cột\n",
+        "df.info()             # tên cột, kiểu, số giá trị không rỗng, bộ nhớ\n",
+        "df.shape              # (số dòng, số cột)\n",
+        "df.head()             # 5 dòng đầu"
+      ],
+      "id": "9172004e",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "df.head(10)           # xem 10 dòng đầu thay vì 5\n",
+        "df.sample(5)          # 5 dòng ngẫu nhiên\n",
+        "df.describe()         # thống kê các cột số (mean, std, min, max...)\n",
+        "df.describe(include=\"all\")   # gồm cả cột chữ\n",
+        "df.nunique()          # số giá trị khác nhau của mỗi cột\n",
+        "df.isna().sum()       # số giá trị thiếu của mỗi cột"
+      ],
+      "id": "2ee0ddd8",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "for col in df.columns:\n",
+        "    print(col, \"-\", df[col].dtype)"
+      ],
+      "id": "8818b10e",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "df.shape"
+      ],
+      "id": "4ab328f7",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "il y a 462 individus et 9 variables.\n",
+        "\n",
+        "**Notification**  \n",
+        "Il y a 2 type de classe 0 est normale et 1 est malade"
+      ],
+      "id": "a4949213"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "df[\"chd\"].value_counts() / len(df)"
+      ],
+      "id": "726cc424",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "La classe 0 représente 65,37 % des observations (302/462), tandis que la classe 1 représente 34,63 % (160/462).\n"
+      ],
+      "id": "72fa7fc7"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "projet-covid",
+      "language": "python",
+      "display_name": "projet-covid",
+      "path": "/Users/nguyenduchoangviet/Library/Jupyter/kernels/projet-covid"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

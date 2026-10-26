@@ -8,7 +8,7 @@
 
 <meta name="author" content="NGUYEN Duc Hoang Viet">
 
-<title>Cadre et théorie de la décision – TP ML IA</title>
+<title>Cadre et théorie de la décision – TP Machine Learning IA fiable</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -78,7 +78,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4419986806cc6a30ad814a3a6537a084.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-c05de971aac4948cd68a0ca740293cf6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,6 +106,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
@@ -122,7 +123,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">TP ML IA</span>
+    <span class="navbar-title">TP Machine Learning IA fiable</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -137,31 +138,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../chapters/tp1.html" aria-current="page"> 
-<span class="menu-text">Théorie de la décision</span></a>
+<span class="menu-text">TP1</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../chapters/tp2.qmd"> 
-<span class="menu-text">Modèles paramétriques</span></a>
+<span class="menu-text">TP2</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../chapters/tp3.qmd"> 
-<span class="menu-text">Méthodes non paramétriques</span></a>
+<span class="menu-text">TP3</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../chapters/tp4.qmd"> 
-<span class="menu-text">Arbres de décision</span></a>
+<span class="menu-text">TP4</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../chapters/tp5.qmd"> 
-<span class="menu-text">Méthodes d’ensemble</span></a>
+<span class="menu-text">TP5</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../chapters/tp6.qmd"> 
-<span class="menu-text">Équité en apprentissage</span></a>
+<span class="menu-text">TP6</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../chapters/tp7.qmd"> 
-<span class="menu-text">Apprentissage par renforcement</span></a>
+<span class="menu-text">TP7</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -195,10 +196,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-  <li><a href="#objectifs" id="toc-objectifs" class="nav-link active" data-scroll-target="#objectifs"><span class="header-section-number">1</span> Objectifs</a></li>
-  <li><a href="#exercice-1-titre-de-lexercice" id="toc-exercice-1-titre-de-lexercice" class="nav-link" data-scroll-target="#exercice-1-titre-de-lexercice"><span class="header-section-number">2</span> Exercice 1 — Titre de l’exercice</a>
+  <li><a href="#exercice-1-titre-de-lexercice" id="toc-exercice-1-titre-de-lexercice" class="nav-link active" data-scroll-target="#exercice-1-titre-de-lexercice"><span class="header-section-number">1</span> Exercice 1 — Titre de l’exercice</a>
   <ul class="collapse">
-  <li><a href="#charger-et-décrire" id="toc-charger-et-décrire" class="nav-link" data-scroll-target="#charger-et-décrire"><span class="header-section-number">2.1</span> Charger et décrire</a></li>
+  <li><a href="#charger-et-décrire" id="toc-charger-et-décrire" class="nav-link" data-scroll-target="#charger-et-décrire"><span class="header-section-number">1.1</span> Charger et décrire</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -231,7 +231,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="47c2fc40" class="cell" data-execution_count="1">
+<div id="b038c4f2" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys<span class="op">;</span> sys.path.append(<span class="st">".."</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -240,8 +240,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib_inline</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="objectifs" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Objectifs</h1>
+<p><strong>Objectifs</strong></p>
 <p>Phrase décrivant l’objectif du TP, par exemple : mettre en œuvre le cadre de la théorie de la décision avant d’utiliser <code>scikit-learn</code>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -257,43 +256,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td><strong>Ex. 1</strong></td>
-<td>Titre de l’exercice 1</td>
+<td>Prise en main et découpage</td>
 </tr>
 <tr class="even">
 <td><strong>Ex. 2</strong></td>
-<td>Titre de l’exercice 2</td>
+<td>Bayes naïf codé à la main</td>
 </tr>
 <tr class="odd">
 <td><strong>Ex. 3</strong></td>
-<td>Titre de l’exercice 3</td>
+<td>LDA, QDA et frontières de décision</td>
 </tr>
 <tr class="even">
 <td><strong>Ex. 4</strong></td>
-<td>Titre de l’exercice 4</td>
+<td>Évaluation et coûts asymétriques</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-</section>
-<section id="exercice-1-titre-de-lexercice" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Exercice 1 — Titre de l’exercice</h1>
-<section id="charger-et-décrire" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="charger-et-décrire"><span class="header-section-number">2.1</span> Charger et décrire</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Consigne
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Énoncé de la question…</p>
-</div>
-</div>
-<div id="d467a88a" class="cell" data-execution_count="2">
+<section id="exercice-1-titre-de-lexercice" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Exercice 1 — Titre de l’exercice</h1>
+<section id="charger-et-décrire" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="charger-et-décrire"><span class="header-section-number">1.1</span> Charger et décrire</h2>
+<div id="18c35e0b" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> utils </span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>utils.style()</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> utils.load_saheart()</span>
@@ -403,12 +388,199 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<div id="f41a7cb6" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.columns            <span class="co"># tên các cột (dạng Index)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df.columns.tolist()   <span class="co"># tên các cột (dạng list, dễ đọc hơn)</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df.dtypes             <span class="co"># kiểu dữ liệu của từng cột</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>df.info()             <span class="co"># tên cột, kiểu, số giá trị không rỗng, bộ nhớ</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>df.shape              <span class="co"># (số dòng, số cột)</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>df.head()             <span class="co"># 5 dòng đầu</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.DataFrame'&gt;
+Index: 462 entries, 1 to 463
+Data columns (total 10 columns):
+ #   Column     Non-Null Count  Dtype  
+---  ------     --------------  -----  
+ 0   sbp        462 non-null    int64  
+ 1   tobacco    462 non-null    float64
+ 2   ldl        462 non-null    float64
+ 3   adiposity  462 non-null    float64
+ 4   famhist    462 non-null    int64  
+ 5   typea      462 non-null    int64  
+ 6   obesity    462 non-null    float64
+ 7   alcohol    462 non-null    float64
+ 8   age        462 non-null    int64  
+ 9   chd        462 non-null    int64  
+dtypes: float64(5), int64(5)
+memory usage: 39.7 KB</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">sbp</th>
+<th data-quarto-table-cell-role="th">tobacco</th>
+<th data-quarto-table-cell-role="th">ldl</th>
+<th data-quarto-table-cell-role="th">adiposity</th>
+<th data-quarto-table-cell-role="th">famhist</th>
+<th data-quarto-table-cell-role="th">typea</th>
+<th data-quarto-table-cell-role="th">obesity</th>
+<th data-quarto-table-cell-role="th">alcohol</th>
+<th data-quarto-table-cell-role="th">age</th>
+<th data-quarto-table-cell-role="th">chd</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">row.names</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">1</th>
+<td>160</td>
+<td>12.00</td>
+<td>5.73</td>
+<td>23.11</td>
+<td>1</td>
+<td>49</td>
+<td>25.30</td>
+<td>97.20</td>
+<td>52</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">2</th>
+<td>144</td>
+<td>0.01</td>
+<td>4.41</td>
+<td>28.61</td>
+<td>0</td>
+<td>55</td>
+<td>28.87</td>
+<td>2.06</td>
+<td>63</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">3</th>
+<td>118</td>
+<td>0.08</td>
+<td>3.48</td>
+<td>32.28</td>
+<td>1</td>
+<td>52</td>
+<td>29.14</td>
+<td>3.81</td>
+<td>46</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">4</th>
+<td>170</td>
+<td>7.50</td>
+<td>6.41</td>
+<td>38.03</td>
+<td>1</td>
+<td>51</td>
+<td>31.99</td>
+<td>24.26</td>
+<td>58</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">5</th>
+<td>134</td>
+<td>13.60</td>
+<td>3.50</td>
+<td>27.78</td>
+<td>1</td>
+<td>60</td>
+<td>25.99</td>
+<td>57.34</td>
+<td>49</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="e86e4286" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">10</span>)           <span class="co"># xem 10 dòng đầu thay vì 5</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df.sample(<span class="dv">5</span>)          <span class="co"># 5 dòng ngẫu nhiên</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>df.describe()         <span class="co"># thống kê các cột số (mean, std, min, max...)</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>df.describe(include<span class="op">=</span><span class="st">"all"</span>)   <span class="co"># gồm cả cột chữ</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>df.nunique()          <span class="co"># số giá trị khác nhau của mỗi cột</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>df.isna().<span class="bu">sum</span>()       <span class="co"># số giá trị thiếu của mỗi cột</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>sbp          0
+tobacco      0
+ldl          0
+adiposity    0
+famhist      0
+typea        0
+obesity      0
+alcohol      0
+age          0
+chd          0
+dtype: int64</code></pre>
+</div>
+</div>
+<div id="6cbd62e0" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> df.columns:</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(col, <span class="st">"-"</span>, df[col].dtype)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>sbp - int64
+tobacco - float64
+ldl - float64
+adiposity - float64
+famhist - int64
+typea - int64
+obesity - float64
+alcohol - float64
+age - int64
+chd - int64</code></pre>
+</div>
+</div>
+<div id="9cc8378d" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>(462, 10)</code></pre>
+</div>
+</div>
+<p>il y a 462 individus et 9 variables.</p>
+<p><strong>Notification</strong><br>
+Il y a 2 type de classe 0 est normale et 1 est malade</p>
+<div id="9e20bb20" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"chd"</span>].value_counts() <span class="op">/</span> <span class="bu">len</span>(df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>chd
+0    0.65368
+1    0.34632
+Name: count, dtype: float64</code></pre>
+</div>
+</div>
+<p>La classe 0 représente 65,37 % des observations (302/462), tandis que la classe 1 représente 34,63 % (160/462).</p>
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <div id="preloader">
     <div class="loader-content">
         <div class="loader-center-group">
@@ -843,4 +1015,5 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
