@@ -19,6 +19,8 @@ website:
     left:
       - href: index.qmd
         text: Accueil
+      - href: chapters/tp0.qmd
+        text: "TP0"
       - href: chapters/tp1.qmd
         text: "TP1"
       - href: chapters/tp2.qmd

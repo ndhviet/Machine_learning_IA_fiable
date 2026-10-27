@@ -1,6 +1,7 @@
 ---
 title: "Cadre et théorie de la décision"
 author: "NGUYEN Duc Hoang Viet "
+jupyter: tp-ml-ia-fiable
 number-sections: true 
 code-fold: false
 execute:
@@ -50,9 +51,27 @@ df.columns            # tên các cột (dạng Index)
 df.columns.tolist()   # tên các cột (dạng list, dễ đọc hơn)
 df.dtypes             # kiểu dữ liệu của từng cột
 df.info()             # tên cột, kiểu, số giá trị không rỗng, bộ nhớ
-df.shape              # (số dòng, số cột)
-df.head()             # 5 dòng đầu
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ```{python}
 df.head(10)           # xem 10 dòng đầu thay vì 5
